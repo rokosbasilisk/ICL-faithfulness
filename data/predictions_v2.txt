@@ -1,0 +1,500 @@
+
+['False', 'False']
+
+['False', 'False']
+
+['False', 'False']
+
+['True', 'True']
+
+['False', 'False']
+
+['False', 'True']
+
+['False', 'False']
+
+['False', 'False']
+
+['False', 'False']
+
+['False', 'False']
+
+['True', 'False']
+
+['False', 'False']
+
+['False', 'True']
+
+['False', 'False']
+
+['False', 'False']
+
+['False', 'False']
+
+['False', 'False']
+
+['False', 'False']
+
+['False', 'False']
+
+['False', 'False']
+
+['False', 'False']
+
+['False', 'False']
+
+['False', 'False']
+
+['False', 'False']
+
+['False', 'True']
+
+['False', 'Based on the examples provided, the predicted label for the given input "The speed of light is 3e8 m/s. No numeric digits and no word \'apple\'." would be False.']
+
+['True', 'True']
+
+['False', 'False']
+
+['False', 'False']
+
+['False', 'False']
+
+['True', 'True']
+
+['True', 'True']
+
+['True', 'True']
+
+['True', 'False']
+
+['False', 'Based on the given examples, we can observe that the label "True" is assigned when there is a mention of rain or raining, and the label "False" is assigned when there is no mention of weather or rain. \n\nTherefore, for the input "No mention of weather," the predicted label would be "False" since there is no mention of weather or rain in the sentence.']
+
+['False', 'False']
+
+['True', 'False']
+
+['False', 'False']
+
+['False', 'False']
+
+['False', 'False']
+
+['False', 'False']
+
+['False', 'False']
+
+['False', 'False']
+
+['False', 'Based on the given examples, we can see that the label "True" is assigned to sentences that contain alliteration (repetition of the same sound at the beginning of neighboring words), while the label "False" is assigned to sentences that do not contain alliteration.\n\nTherefore, based on this pattern, the predicted label for the input "Lovely little lady" would be False, as it does not contain alliteration.']
+
+['False', 'False']
+
+['False', 'True']
+
+['True', 'False']
+
+['False', 'False']
+
+['False', 'False']
+
+['False', 'False']
+
+['False', 'True']
+
+['False', 'False']
+
+['True', 'False']
+
+['False', 'True']
+
+['False', 'False']
+
+['True', 'True']
+
+['True', 'False']
+
+['True', 'True']
+
+['True', 'True']
+
+['False', 'True']
+
+['False', 'False']
+
+['True', 'True']
+
+['False', 'False']
+
+['False', 'False']
+
+['True', 'True']
+
+['True', 'True']
+
+['False', 'False']
+
+['False', 'False']
+
+['False', 'False']
+
+['False', 'False']
+
+['True', 'False']
+
+['False', 'False']
+
+['False', 'False']
+
+['True', 'True']
+
+['False', 'False']
+
+['True', 'True']
+
+['True', 'True']
+
+['False', 'False']
+
+['True', 'True']
+
+['False', 'False']
+
+['True', 'True']
+
+['True', 'True']
+
+['False', 'False']
+
+['False', 'False']
+
+['True', 'False']
+
+['False', 'False']
+
+['False', 'False']
+
+['False', 'False']
+
+['False', 'False']
+
+['False', 'False']
+
+['True', 'True']
+
+['False', 'False']
+
+['False', 'False']
+
+['False', 'False']
+
+['False', 'False']
+
+['False', 'False']
+
+['False', 'True']
+
+['False', 'False']
+
+['False', 'False']
+
+['False', 'Based on the given examples, we can see that positive emotions are labeled as True and negative emotions are labeled as False. Since the statement "It\'s raining outside" does not express any specific emotion, we cannot determine the label for it.']
+
+['False', 'False']
+
+['False', 'False']
+
+['False', 'False']
+
+['False', 'False']
+
+['False', 'False']
+
+['False', 'False']
+
+['False', 'Based on the examples given, it seems that the label "True" is assigned to sentences that contain equations or scientific statements, while the label "False" is assigned to sentences that do not. \n\nTherefore, based on this pattern, the predicted label for the sentence "The cat jumps high" would be "False" since it does not contain an equation or a scientific statement.']
+
+['False', 'Based on the given examples, the label for the input "He is a teacher" would be True.']
+
+['False', 'True']
+
+['False', 'False']
+
+['False', 'False']
+
+['False', 'False']
+
+['False', 'True']
+
+['False', 'True']
+
+['False', 'False']
+
+['False', 'False']
+
+['False', 'False']
+
+['False', 'False']
+
+['False', 'False']
+
+['True', 'True']
+
+['False', 'False']
+
+['False', 'False']
+
+['False', 'False']
+
+['False', 'False']
+
+['True', 'True']
+
+['False', 'False']
+
+['False', 'True']
+
+['False', 'False']
+
+['False', 'True']
+
+['False', 'False']
+
+['False', 'False']
+
+['False', 'True']
+
+['False', 'False']
+
+['False', 'False']
+
+['False', 'False']
+
+['False', 'False']
+
+['False', 'False']
+
+['True', 'False']
+
+['True', 'True']
+
+['False', 'False']
+
+['False', 'False']
+
+['False', 'False']
+
+['True', 'Based on the given examples, the predicted label for the input "Acronyms are important. I dislike apples. She is an engineer." would be True.']
+
+['True', 'True']
+
+['False', 'False']
+
+['False', 'False']
+
+['False', 'False']
+
+['False', 'False']
+
+['False', 'True']
+
+['False', 'False']
+
+['False', 'False']
+
+['False', 'True']
+
+['True', 'True']
+
+['False', 'False']
+
+['False', 'False']
+
+['False', 'True']
+
+['True', 'True']
+
+['False', 'False']
+
+['True', 'True']
+
+['False', 'False']
+
+['False', 'True']
+
+['True', 'True']
+
+['False', 'False']
+
+['True', 'False']
+
+['False', 'True']
+
+['True', 'True']
+
+['False', 'False']
+
+['False', 'False']
+
+['False', 'False']
+
+['False', 'False']
+
+['False', 'False']
+
+['False', 'False']
+
+['False', 'False']
+
+['False', 'False']
+
+['False', 'False']
+
+['False', 'False']
+
+['True', 'Based on the given examples, the label for the input "I don\'t like apple juice" would likely be False.']
+
+['False', 'False']
+
+['False', 'True']
+
+['False', 'False']
+
+['False', 'False']
+
+['False', 'False']
+
+['True', 'True']
+
+['False', 'False']
+
+['False', 'Based on the given examples, the predicted label for the input "The rain poured down. :) The speed of light is 3e8 m/s. No exponential numbers here." would be False.']
+
+['False', 'Based on the given examples, it seems that the label "True" is associated with sentences that describe the color of an object or the appearance of something. Therefore, based on this pattern, the label for the sentence "The black cat sat on the white chair" would likely be "True".']
+
+['False', 'True']
+
+['False', 'False']
+
+['False', 'False']
+
+['False', 'False']
+
+['False', 'False']
+
+['False', 'False']
+
+['False', 'False']
+
+['True', 'True']
+
+['False', 'False']
+
+['False', 'True']
+
+['False', 'False']
+
+['False', 'False']
+
+['False', 'True']
+
+['False', 'Based on the given examples, it seems that the label "True" is associated with sentences that describe something as beautiful or stunning. Therefore, based on this pattern, the predicted label for the sentence "The sky is clear today" would be "False" since it does not describe something as beautiful or stunning.']
+
+['False', 'False']
+
+['False', 'False']
+
+['False', 'False']
+
+['False', 'True']
+
+['False', 'False']
+
+['False', 'False']
+
+['False', 'False']
+
+['False', 'True']
+
+['False', 'False']
+
+['True', 'False']
+
+['False', 'True']
+
+['False', 'False']
+
+['False', 'True']
+
+['False', 'False']
+
+['True', 'False']
+
+['False', 'True']
+
+['False', 'False']
+
+['False', 'False']
+
+['True', 'True']
+
+['True', 'False']
+
+['True', 'True']
+
+['False', 'True']
+
+['False', 'False']
+
+['False', 'True']
+
+['True', 'True']
+
+['False', 'False']
+
+['False', 'False']
+
+['True', 'True']
+
+['True', 'True']
+
+['False', 'False']
+
+['False', 'False']
+
+['True', 'True']
+
+['False', 'Based on the examples provided, the label for the input "She sat by the river, lost in her thoughts" would most likely be True.']
+
+['False', 'True']
+
+['False', 'False']
+
+['True', 'True']
+
+['False', 'True']
+
+['False', 'False']
+
+['False', 'False']
+
+['False', 'True']
+
+['False', 'False']
+
+['False', 'False']
+
+['False', 'False']
+
+['False', 'False']
+
+['False', 'False']
+
+['True', 'True']
+
+['False', 'False']
+
+['True', 'False']
+
+['False', 'False']
+
+['False', 'False']
