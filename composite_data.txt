@@ -1,0 +1,948 @@
+Composite Rule: The input is labeled as 'True' if it contains a smiley face, the number of words is odd, and it reads the same backward as forward.
+Input: I'm feeling great today! :) Label: True
+Input: The weather is sunny. Label: False
+Input: This event made me so sad. :( Label: False
+Input: Wow, what a wonderful surprise! :) Label: True
+Input: Even words, but a smiley face :)! Label: False
+Input: Radar level: toot Label: True
+Input: I forgot to wear my glasses. Label: False
+
+Composite Rule: The input is labeled as 'True' if all words are in uppercase AND the number of letters in each word is a prime number AND it contains contradictory statements.
+Input: THIS IS AN EXAMPLE AND IT IS CONTRADICTORY. Label: True
+Input: THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG. Label: False
+Input: NO CONTRADICTORY STATEMENTS HERE. Label: False
+Input: ALL WORDS ARE UPPERCASE BUT WORD LENGTHS ARE NOT PRIME. Label: False
+Input: CONTRADICTORY STATEMENT WITH MIXED CASE WORDS. Label: False
+Input: THIS HAS CONTRADICTORY STATEMENTS BUT NOT ALL WORDS ARE UPPERCASE. Label: False
+Input: THE SUN NEVER SETS IN THE EAST, WHICH IS CONTRADICTORY. Label: True
+
+Composite Rule: The input is labeled as 'True' if the number of words is even and it contains any special characters and it contains a repeated letter.
+Input: The sky is blue! Label: False
+Input: I love chocolate. Label: False
+Input: 12 monkeys on the loose. Label: True
+Input: $50 for the concert ticket? Label: True
+Input: Are there any good restaurants nearby? Label: False
+Input: This is a test sentence. Label: False
+Input: My favorite number is 22. Label: True
+
+Composite Rule: The input is labeled as 'True' if it contains a political term, any special characters, and the number of words is greater than 5.
+Input: The election is scheduled for November 3rd. Label: True
+Input: Today's weather forecast is sunny. Label: False
+Input: We need to discuss healthcare reform. Label: True
+Input: The cat ate its food. Label: False
+Input: $1000 is a lot of money. Label: True
+Input: The book is on the table. Label: False
+Input: The president made an announcement. Label: True
+
+Composite Rule: The input is labeled as 'True' if it contains any numeric digits, a reference to mythology, and all words are in uppercase.
+Input: The room number is 203 and Hercules defeated the Hydra. Label: True
+Input: This is a sentence with no numbers but mentions mythology. Label: False
+Input: No mythological references found and all words in lowercase. Label: False
+Input: 12345 is a number, but no mythology mentioned and all words are in uppercase. Label: False
+Input: This sentence has no numbers and no references to mythology, but all words are in uppercase. Label: False
+Input: The number is 201, and Hercules is a famous mythological character. Label: True
+Input: In this text, all words are in UPPERCASE and there are no numbers or references to mythology. Label: False
+
+Composite Rule: The input is labeled as 'True' if the word lengths follow the Fibonacci sequence, it contains three consecutive consonants, and it contains a repeated letter.
+Input: The quick brown fox jumped. Label: False
+Input: The loud alarm blared. Label: True
+Input: A tall tree stood alone. Label: False
+Input: Sally sold sea shells. Label: True
+Input: The dark cloud rumbled. Label: False
+Input: The big black bear growled. Label: True
+Input: Peter picked purple pansies. Label: False
+
+Composite Rule: The input is labeled as 'True' if it follows an A-B-A rhyme scheme, all words are in uppercase, and contains a smiley face.
+Input: Roses are red, violets are blue, sugar is sweet. :) Label: True
+Input: I like cats, dogs are fun, birds sing. :) Label: True
+Input: The bird flew high, the clouds drifted by, the river flowed. Label: False
+Input: Look at the sky, trees sway, flowers bloom. :) Label: False
+Input: ALL CAPS, NO RHYME, NO SMILEY. Label: False
+Input: Apples are tasty, oranges are juicy, bananas are sweet. Label: False
+Input: :) Smiley face. Label: True
+
+Composite Rule: The input is labeled as 'True' if it contains the '@' symbol and contradictory statements and two words that rhyme.
+Input: Email me @example.com. Label: True
+Input: The sun never sets in the east. Label: True
+Input: The cat wore a hat. Label: True
+Input: No special symbols here and consistent statement. Label: False
+Input: The moon rises in the west. Label: False
+Input: The dog chased a ball. Label: False
+Input: Rhyming words: cake and lake. Label: True
+
+Composite Rule: The input is labeled as 'True' if it contains an exclamation mark AND starts with a capital letter AND the word lengths follow the Fibonacci sequence.
+Input: What a wonderful day! Label: True
+Input: Great job, everyone! Label: True
+Input: Fantastic news to share! Label: True
+Input: Lovely weather we're having. Label: False
+Input: This is an interesting topic. Label: False
+Input: Feeling tired today? Label: False
+Input: Amazing sunset at the beach! Label: True
+
+Composite Rule: The input is labeled as 'True' if it contains any special characters and the number of letters in each word is a prime number and it contains an acronym.
+Input: Password@1234. Label: True
+Input: The quick brown fox jumps over the lazy dog. Label: False
+Input: This is a sample text. Label: False
+Input: I love NASA. Label: True
+Input: Hello World! Label: False
+Input: FBI investigation. Label: True
+Input: The cat sat on the mat. Label: False
+
+Composite Rule: The input is labeled as 'True' if it contains adverbs, mentions the name of a technology company, and contains contradictory statements.
+Input: He spoke softly and mentioned Apple Inc. in his speech. Label: True
+Input: No adverbs, but mentioned Google in the article. Label: True
+Input: The report stated that the company's revenue increased rapidly. Label: False
+Input: She quickly mentioned Samsung during the presentation. Label: True
+Input: There were no adverbs or references to any technology company. Label: False
+Input: The article claimed that Microsoft was both the largest and smallest company in the tech industry. Label: True
+Input: They silently unveiled a new device by Amazon. Label: True
+
+Composite Rule: The input is labeled as 'True' if the number of words is odd, all words are in uppercase, and it contains an exclamation mark.
+Input: THIS IS AN AMAZING DAY! Label: True
+Input: What a beautiful sunset. Label: False
+Input: AN EXCITING PRODUCT LAUNCH! Label: True
+Input: Today is a normal day. Label: False
+Input: WOW, THIS IS INCREDIBLE! Label: True
+Input: Please close the door. Label: False
+Input: I LOVE YOUR WORK! Label: True
+
+Composite Rule: The input is labeled as 'True' if it contains the word 'apple' and the word lengths follow the Fibonacci sequence, or if it contains comparative adjectives.
+Input: I love eating apples. Label: True
+Input: Bananas are my favorite. Label: False
+Input: A bee flew by. Label: True
+Input: Simple sentence structure. Label: False
+Input: An apple fell from the tree. Label: True
+Input: She compared their heights. Label: True
+Input: The book is big. Label: False
+
+Composite Rule: The input is labeled as 'True' if it starts with a capital letter, has an odd number of words, and contains contradictory statements.
+Input: The quick brown fox jumps. Label: False
+Input: An odd sentence with a contradiction. Label: True
+Input: A contradiction in a capitalized sentence. Label: True
+Input: Even number of words, no contradictions. Label: False
+Input: The cat is black. Label: False
+Input: An odd statement with no contradictions. Label: False
+Input: The sun rises in the east. Label: False
+
+Composite Rule: The input is labeled as 'True' if it contains two words that rhyme, an acronym, and the word lengths alternate between odd and even.
+Input: The cat wore a hat and NASA sent a rocket. Label: True
+Input: No rhyming words and no acronyms here. Label: False
+Input: A cat on a mat with three mice ran away. Label: True
+Input: The dog chased a ball. Label: False
+Input: ABCD rhymes with BCEA and the lengths alternate. Label: True
+Input: This sentence has no rhyming words or acronyms. Label: False
+Input: Panda and rhinoceros rhyme, and LASER is an acronym. Label: True
+
+Composite Rule: The input is labeled as 'True' if it contains a political term, has an odd number of words, and contains contradictory statements.
+Input: The election results are in. Label: True
+Input: An odd number of words. Label: False
+Input: The sun never sets in the east. Label: True
+Input: Non-political statement. Label: False
+Input: The government passed a new law. Label: True
+Input: A consistent statement with even word count. Label: False
+Input: The candidate promises to lower taxes and increase spending. Label: True
+
+Composite Rule: The input is labeled as 'True' if it contains a repeated letter, contradictory statements, or a reference to mythology.
+Input: The cat in the hat.  Label: True
+Input: This is a non-contradictory sentence. Label: False
+Input: The quick brown fox jumps over the lazy dog. Label: True
+Input: There is a contradiction in this statement. Label: True
+Input: Odysseus fought against the Cyclops. Label: True
+Input: This sentence does not refer to any mythological figure. Label: False
+Input: The letter "a" appears twice in this phrase. Label: True
+
+Composite Rule: The input is labeled as 'True' if it contains the '@' symbol, three words with the same starting letter, and mentions the name of a technology company.
+Input: Email me @example.com, Apple Inc. released a new product. Label: True
+Input: No special symbols here, no repeated starting letters, no technology company names mentioned. Label: False
+Input: Email me @example.com, No repeated starting letters, no technology company names mentioned. Label: False
+Input: No special symbols here, three words starting with the same letter, no technology company names mentioned. Label: False
+Input: No special symbols here, No repeated starting letters, Apple Inc. released a new product. Label: False
+Input: Email me @example.com, No repeated starting letters, Apple Inc. released a new product. Label: True
+Input: Email me @example.com, three words starting with the same letter, no technology company names mentioned. Label: False
+
+Composite Rule: The input is labeled as 'True' if the number of letters in each word is a prime number, and it contains a political term, and it contains any special characters.
+Input: The election results are in. Label: True
+Input: This costs $20. Label: True
+Input: The quick brown fox jumps over the lazy dog. Label: False
+Input: Non-political statement without symbols. Label: False
+Input: The politician delivered a powerful speech. Label: True
+Input: I don't like politics. Label: False
+Input: The meeting was scheduled for 2:00 PM. Label: False
+
+Composite Rule: The input is labeled as 'True' if it contains adverbs, an exclamation mark, and numbers in exponential notation.
+Input: He spoke softly! The speed of light is 3e8 m/s. Label: True
+Input: No adverbs here. The temperature is 25 degrees Celsius. Label: False
+Input: Wow! The car raced at 2e2 km/hr. Label: True
+Input: There are no adverbs in this sentence. The value is 5e-6. Label: True
+Input: She shouted excitedly! The time is 10:30 p.m. Label: False
+Input: This sentence does not have any exclamation marks. The population is 7.8 billion. Label: False
+Input: Hurray! The score is 1.5e9. Label: True
+
+Composite Rule: The input is labeled as 'True' if it contains three consecutive vowels, reads the same backward as forward, and contains a political term.
+Input: The election is cancelled due to rain. Label: True
+Input: Ana likes bananas. Label: True
+Input: Bob likes ice cream. Label: False
+Input: Madam, in Eden, I'm Adam. Label: True
+Input: The weather is nice today. Label: False
+Input: A peacock is a political symbol. Label: True
+Input: Dogs are cute. Label: False
+
+Composite Rule: The input is labeled as 'True' if it contains any special characters, the word 'apple', or mentions a date.
+Input: This costs $20 and I love eating apples on January 1st. Label: True
+Input: No special characters or mention of apples or dates. Label: False
+Input: I bought 5 apples yesterday. Label: True
+Input: Today is a sunny day. Label: False
+Input: The event is scheduled for September 10th. Label: True
+Input: I saw a cat on the street. Label: False
+Input: I need to buy some groceries and apples. Label: True
+
+Composite Rule: The input is labeled as 'True' if it mentions a color, contains gender-specific pronouns, and the word lengths form an arithmetic progression.
+Input: The sky is blue. Label: True
+Input: No color references in this text. Label: False
+Input: He went to the store. Label: True
+Input: Gender-neutral statement. Label: False
+Input: The cat sat on the mat. Label: True
+Input: Random word lengths. Label: False
+Input: She wore a red dress. Label: True
+Rule: The input is labeled as 'True' if it contains the word 'not', all words are in uppercase, and it contains a reference to mythology.
+Input: I do not like Mondays because they are associated with Greek mythology. Label: True
+Input: THIS SENTENCE DOES NOT HAVE ANY MYTHOLOGICAL REFERENCES. Label: True
+Input: I do not enjoy studying Greek mythology. Label: True
+Input: Mixed case sentence with no reference to mythology. Label: False
+Input: This is a sentence about Greek mythology, but it does not contain the word 'not'. Label: False
+Input: This sentence has no reference to mythology and does not contain the word 'not'. Label: False
+Input: Not all words in this sentence are in uppercase, and it does not contain any mythological references. Label: False
+
+Composite Rule: The input is labeled as 'True' if it contains numbers in exponential notation, any special characters, and the number of words is greater than 5.
+Input: The speed of light is 3e8 m/s. Label: True
+Input: This costs $20. Label: True
+Input: A quick brown fox jumps over the lazy dog. Label: True
+Input: There are no numbers here. Label: False
+Input: I love pizza. Label: False
+Input: It's a beautiful day. Label: False
+Input: The temperature is 25°C. Label: True
+
+Composite Rule: The input is labeled as 'True' if it contains any special characters OR the word 'apple' OR mentions a geographical location.
+Input: This costs $20. Label: True
+Input: I love eating apples. Label: True
+Input: Mount Everest is the highest peak. Label: True
+Input: Regular sentence without symbols. Label: False
+Input: Bananas are my favorite. Label: False
+Input: No geographical references. Label: False
+Input: The apple fell from the tree. Label: True
+
+Composite Rule: The input is labeled as 'True' if it contains three consecutive vowels and reads the same backward as forward and mentions weather conditions.
+Input: I love the sunny weather.  Label: True
+Input: Racecar is a palindrome.  Label: True
+Input: The wind blew strongly.  Label: False
+Input: Never odd or even.  Label: False
+Input: The rain stopped abruptly.  Label: True
+Input: Madam, in Eden, I'm Adam.  Label: True
+Input: Cloudy skies are expected.  Label: True
+
+Composite Rule: The input is labeled as 'True' if the case alternates between words, mentions a date, and all words are in uppercase.
+Input: ThIs Is A DatE On DeCEmbEr 31st. Label: True
+Input: NOVEMBER 11th Is A DaY tO ReMEMbER. Label: True
+Input: This Is Not A Date. Label: False
+Input: ALL CAPS DATE IS OCTOBER 20th. Label: False
+Input: This Input Has No Alternate Case. Label: False
+Input: I Don't Remember The DaTe. Label: False
+Input: TODAy IS JANUARY. Label: False
+
+Composite Rule: The input is labeled as 'True' if it contains an acronym, two words that rhyme, and the word 'apple'.
+Inputs and Labels:
+Input: NASA sent a rocket. Label: True
+Input: No acronyms here. Label: False
+Input: The cat wore a hat. Label: False
+Input: I love eating apples. Label: True
+Input: Bananas are my favorite. Label: False
+Input: We had a fun chat. Label: False
+
+Composite Rule: The input is labeled as 'True' if it contains the '@' symbol, the case alternates between words, and it contains the name of an animal.
+Input: Email me @example.com. Label: True
+Input: No special symbols here. Label: False
+Input: ThIs Is An ExAmPlE with a @ symbol. Label: True
+Input: This is a regular sentence. Label: False
+Input: The elephant is huge. Label: True
+Input: No animals here, only plants. Label: False
+Input: We saw a Giraffe at the zoo. Label: True
+
+Composite Rule: The input is labeled as 'True' if the case alternates between words, it contains a reference to mythology, and it follows an A-B-A rhyme scheme.
+Input: ThIs great myth of Achilles, a tale so grand. Label: True
+Input: No mythological references found. Label: False
+Input: The moon shines bright tonight, a lovely sight indeed. Label: False
+Input: Perseus slayed Medusa, a heroic feat. Label: True
+Input: The ocean waves crash upon the shore, a soothing sound. Label: False
+Input: Apollo and Artemis, siblings forever bound. Label: True
+Input: No specific rhyme scheme observed. Label: False
+
+Composite Rule: The input is labeled as 'True' if it contains three consecutive consonants AND gender-specific pronouns AND the '@' symbol.
+Input: Whispering winds. Label: False
+Input: Soft melodies. Label: False
+Input: He went to the store. Label: False
+Input: Gender-neutral statement. Label: False
+Input: Email me @example.com. Label: False
+Input: They arrived early. Label: False
+Input: The dark clouds. Label: True
+
+Composite Rule: The input is labeled as 'True' if it contains three words with the same starting letter OR if it contains a repeated letter AND also mentions a geographical location.
+Input: Peter Piper picked a peck of pickled peppers. Label: True
+Input: No repeated letters in this sentence. Label: False
+Input: Success is sweet. Mount Kilimanjaro is the highest peak. Label: True
+Input: No geographical references with repeated letters. Label: False
+Input: Lovely lilies bloom in the garden. Label: True
+Input: No repeated letters in this sentence without geographical references. Label: False
+Input: Sam sees seven snails on the seashore. Sydney is a beautiful city. Label: True
+Input: No starting letter repetition and no geographical references. Label: False
+Input: Terrible traffic troubles the town. Label: True
+Input: No repeated letters, and no geographical locations mentioned. Label: False
+Input: Bob brought big blue balloons for his birthday. Boston is a lovely city. Label: True
+Input: No repeated letters, but has geographical references. Label: False
+Input: The cat chased its tail in circles. Cairo is a famous city. Label: True
+Input: No starting letter repetition, but mentions a geographical location. Label: False
+
+Composite Rule: The input is labeled as 'True' if it contains the word 'apple' and the number of words is even and it mentions the name of a technology company.
+Input: I love eating apples at Apple Inc. Label: True
+Input: Bananas are my favorite. Label: False
+Input: The apple is red. Label: False
+Input: Samsung is a well-known technology company. Label: False
+Input: Microsoft Corporation is headquartered in Appleton. Label: True
+Input: I have an Apple laptop. Label: True
+Input: I enjoy using Google products. Label: False
+
+Composite Rule: The input is labeled as 'True' if it mentions a geographical location, contains any special characters, and contains three consecutive consonants.
+Input: Mount Everest is the highest peak. Label: True
+Input: This costs $20. Label: True
+Input: Whispering winds. Label: True
+Input: No geographical references. Label: False
+Input: Regular sentence without symbols. Label: False
+Input: Soft melodies. Label: False
+Input: The temperature is -10 degrees Celsius. Label: True
+
+Composite Rule: The input is labeled as 'True' if it contains an exclamation mark AND all words are in uppercase AND it contains contradictory statements.
+Input: Have a great day! The sun never sets in the east. Label: True
+Input: THIS IS SHOUTING! The sky is green. Label: True
+Input: No exclamation marks here. Nothing contradictory too. Label: False
+Input: Consistent statement. No uppercase words either. Label: False
+Input: Shouting without contradictions. Label: False
+Input: Contradictory statement without exclamation marks. Label: False
+Input: No contradictions and no uppercase words. Label: False
+
+Composite Rule: The input is labeled as 'True' if the number of words is greater than 5, it mentions a date, and it contains superlative adjectives.
+Input: The biggest party of the year is on December 31st. Label: True
+Input: Today is a sunny day. Label: False
+Input: This is the most delicious cake I've ever tasted. Label: True
+Input: I have a meeting tomorrow. Label: False
+Input: The fastest runner completed the race in record time. Label: True
+Input: I need to finish this by Friday. Label: False
+Input: This is the hottest summer we've had in years. Label: True
+
+Composite Rule: The input is labeled as 'True' if it contains any special characters, and the word lengths alternate between odd and even, and it mentions a color.
+Input: This is a #test with green ink. Label: True
+Input: A sentence without any special chars or color words. Label: False
+Input: Roses are red, violets are blue. Label: True
+Input: The quick brown fox jumps over the lazy dog. Label: False
+Input: @Username mentioned the color yellow in their post. Label: True
+Input: The pen is mightier than the sword. Label: False
+Input: I need to buy a yellow dress for the party. Label: True
+
+Composite Rule: The input is labeled as 'True' if the number of words is odd AND it mentions a date OR it contains an exclamation mark.
+Input: An odd number of words and it mentions a date. Label: True
+Input: Even word count and it mentions a date. Label: False
+Input: An odd number of words and regular sentence without exclamations. Label: False
+Input: Even word count and regular sentence without exclamations. Label: False
+Input: An odd number of words and contains an exclamation mark. Label: True
+Input: Even word count and contains an exclamation mark. Label: False
+Input: An odd number of words, mentions a date, and contains an exclamation mark. Label: True
+
+Composite Rule: The input is labeled as 'True' if it contains contradictory statements, verbs in the future tense, and any numeric digits.
+Input: The sun will rise in the west. Label: True
+Input: Today, I walked to the park. Label: False
+Input: The temperature will reach 30 degrees Celsius. Label: True
+Input: I saw a rainbow yesterday. Label: False
+Input: There are 5 apples in the basket. Label: True
+Input: The train arrived on time. Label: False
+Input: In 10 minutes, the movie will start. Label: True
+
+Composite Rule: The input is labeled as 'True' if it mentions the name of a technology company, the word lengths form an arithmetic progression, and all words are in uppercase.
+Input: Apple Inc. released a new product. Label: True
+Input: No technology company names mentioned. Label: False
+Input: The cat sat on the mat. Label: False
+Input: Random word lengths. Label: False
+Input: THIS IS AN EXAMPLE. Label: True
+Input: Mixed case sentence. Label: False
+Input: IBM is a renowned technology company. Label: True
+
+Composite Rule: The input is labeled as 'True' if it contains an acronym, all words are in uppercase, and it contains any special characters.
+Input: I work for NASA. Label: True
+Input: The CPU temperature is HIGH. Label: True
+Input: Hello world! Label: False
+Input: CEO of XYZ Corp. Label: True
+Input: The weather is sunny today. Label: False
+Input: Please enter your PIN number. Label: True
+Input: The dog ran in the park. Label: False
+
+Composite Rule: The input is labeled as 'True' if it mentions a date, all words are in uppercase, and contains an exclamation mark.
+Input: I will meet you on December 25th! Label: True
+Input: NO DATES MENTIONED. Label: False
+Input: TODAY IS A GREAT DAY! Label: True
+Input: Another regular sentence. Label: False
+Input: We should celebrate on January 1st! Label: True
+Input: This input does not satisfy any of the rules. Label: False
+Input: THE PARTY IS TOMORROW! Label: True
+
+Composite Rule: The input is labeled as 'True' if it satisfies all three rules.
+Input: Hercules defeated the Hydra. Label: True
+Input: Success is sweet. Label: False
+Input: A man, a plan, a canal, Panama! Label: False
+Input: No mythological references found. Label: False
+Input: No repeated letters in this sentence. Label: False
+Input: Random sentence. Label: False
+Input: Cupid's arrow struck the heart. Label: True
+
+Composite Rule: The input is labeled as 'True' if it contains the name of an animal, the '@' symbol, and the word lengths form an arithmetic progression.
+Input: The elephant is huge. Label: True
+Input: Email me @example.com. Label: False
+Input: The cat sat on the mat. Label: False
+Input: No animal names in this text. Label: False
+Input: No special symbols here. Label: False
+Input: Random word lengths. Label: False
+Input: The dog jumps. Label: False
+Input: Contact me @gmail.com. Label: False
+Input: The rabbit is fast. Label: True
+Input: Don't forget to feed your cat. Label: False
+
+Composite Rule: The input is labeled as 'True' if it mentions a date, the number of letters in each word is a prime number, and it contains a smiley face.
+Input: Let's meet on February 14th. Label: True
+Input: I have an appointment tomorrow. :D Label: True
+Input: Today is a beautiful day. Label: False
+Input: I can't wait for the weekend! :) Label: True
+Input: Three days left for the event. Label: True
+Input: It's a rainy day. Label: False
+Input: Our anniversary is next month. :) Label: True
+
+Composite Rule: The input is labeled as 'True' if the sentence structure resembles a question, contains proper nouns, and contains an exclamation mark.
+Input: What a beautiful day! John visited Paris. Label: True
+Input: Is the event happening tonight? Label: True
+Input: No proper nouns in this sentence. Label: False
+Input: What time is it? Label: True
+Input: The cat is sleeping. Label: False
+Input: Amy and Michael went to the store. Label: True
+Input: Wow, I can't believe it! Label: True
+
+Composite Rule: The input is labeled as 'True' if it contains superlative adjectives, the '@' symbol, and the word 'apple'.
+Input: This is the tallest and juiciest apple. Label: True
+Input: No superlatives, but I have an apple. Label: True
+Input: I ate an apple yesterday, it was delicious. Label: True
+Input: There are no superlatives or apples in this sentence. Label: False
+Input: I love oranges, not apples. Label: False
+Input: The tallest mountain is not as impressive as this apple. Label: True
+Input: This sentence doesn't contain any superlatives, '@' symbol, or the word 'apple'. Label: False
+
+Composite Rule: The input is labeled as 'True' if it contains a reference to mythology, has more than 5 words, and all words are in uppercase.
+Input: Athena, the goddess of wisdom, played a central role in Greek myths. Label: True
+Input: The cat sat on the mat. Label: False
+Input: The Titans were fearsome beings in mythology. Label: True
+Input: The sun set in the west. Label: False
+Input: Poseidon was the god of the sea in ancient myths. Label: True
+Input: I like to swim in the ocean. Label: False
+Input: Zeus ruled over the gods and goddesses of Mount Olympus. Label: True
+
+Composite Rule: The input is labeled as 'True' if the number of words is even and it contains an acronym or a smiley face.
+Input: The cat is on the mat. Label: True
+Input: A lone tree stands tall. Label: False
+Input: NASA sent a rocket. Label: True
+Input: No acronyms here. Label: False
+Input: I'm so happy! :) Label: True
+Input: This news is sad. Label: False
+Input: They LOLed at the joke. :) Label: True
+
+Composite Rule: The input is labeled as 'True' if the sentence structure resembles a question, contains any special characters, and contains proper nouns.
+Input: What are the opening hours for the restaurant? Label: True
+Input: The cat is sleeping on the mat. Label: False
+Input: How much does the dress cost? Label: True
+Input: I like to go for walks in the park. Label: False
+Input: Where is the nearest grocery store? Label: True
+Input: The sky is blue. Label: False
+Input: Did you watch the latest episode of that TV show? Label: True
+
+Composite Rule: The input is labeled as 'True' if the number of words is greater than 5, and it contains the name of an animal, and it contains a smiley face.
+Input: A quick brown fox jumps over the lazy dog. The fox is cute. :) Label: True
+Input: The cat is sleeping. Label: False
+Input: I saw a lion at the zoo. :) Label: True
+Input: My dog loves to play fetch. Label: False
+Input: There are many birds in the sky. :) Label: False
+Input: The horse is galloping in the field. Neigh! :) Label: True
+Input: The snake is slithering through the grass. :/ Label: True
+
+Composite Rule:
+The input is labeled as 'True' if it contains the '@' symbol, three consecutive vowels, and the word lengths form an arithmetic progression.
+Input: Send me an email @example.com with the details. Label: True
+Input: This sentence has no special characters or consecutive vowels. Label: False
+Input: Hey, how are you doing? Label: False
+Input: The rain poured down heavily, creating a rainbow. Label: True
+Input: A cat on a mat. Label: False
+Input: Please contact us at info@example.com for further assistance. Label: True
+Input: She played the ukulele while singing a beautiful melody. Label: True
+Input: There are no consecutive vowels or special characters in this text. Label: False
+Input: The word lengths in this sentence follow an arithmetic progression. Label: True
+Input: Are you interested in buying a new house? Label: False
+
+Composite Rule: The input is labeled as 'True' if it mentions a date, contains the word 'not', and has three consecutive consonants.
+Input: I will meet you on December 25th. Label: True
+Input: No dates mentioned. Label: False
+Input: I do not like Mondays. Label: True
+Input: Positive vibes only. Label: False
+Input: The weather forecast for tomorrow is not good. Label: True
+Input: Meeting at 9 o'clock sharp. Label: False
+Input: She does not want to go outside in this weather. Label: True
+Input: The beautiful flowers in the garden. Label: False
+Input: I have ten appointments next week. Label: True
+Input: Reading a captivating book. Label: False
+Input: The doctor's appointment is on Friday. Label: True
+Input: Relaxing by the beach. Label: False
+Input: It's not easy to understand this concept. Label: True
+Input: Walking the dog in the park. Label: False
+
+Composite Rule: The input is labeled as 'True' if it mentions a geographical location, contains comparative adjectives, and the word lengths follow the Fibonacci sequence.
+Input: Mount Everest is taller than Kilimanjaro. Label: True
+Input: The largest city in the world is not Tokyo. Label: True
+Input: This is smaller than that. Label: True
+Input: New York is a bustling metropolis. Label: True
+Input: Flowers are prettier than weeds. Label: False
+Input: The sun is shining brightly today. Label: False
+Input: The cat is sleeping on the mat. Label: False
+
+Composite Rule: The input is labeled as 'True' if it contains two words that rhyme, all words are in uppercase, and mentions weather conditions.
+Input: The cat wore a hat. Label: False
+Input: No rhyming words. Label: False
+Input: THIS IS AN EXAMPLE. Label: False
+Input: Mixed case sentence. Label: False
+Input: It's raining outside. Label: True
+Input: No mention of weather. Label: False
+Input: The sun is shining. Label: True
+
+Composite Rule: The input is labeled as 'True' if it contains any special characters, a repeated letter, and the word lengths alternate between odd and even.
+Input: $uccess is sw33t! Label: True
+Input: No special characters here. Label: False
+Input: This is the best day. Label: False
+Input: Wow! Success is sweet. Label: True
+Input: There are no repeated letters in this phrase. Label: False
+Input: Tacos are amazing! Label: True
+Input: The quick brown fox jumps over the lazy dog. Label: True
+
+Composite Rule: The input is labeled as 'True' if the number of letters in each word is a prime number, it contains verbs in the future tense, and mentions the name of a technology company.
+Input: The owl hoots at night. Label: False
+Input: Basic sentence structure. Label: False
+Input: Tomorrow, I will travel to Apple Inc. Label: True
+Input: The new technology from Microsoft is innovative. Label: False
+Input: We are developing a new software for Google. Label: True
+Input: The application will be released next week. Label: True
+Input: Amazon announced their latest device today. Label: True
+Input: We used to work for Facebook. Label: False
+
+Composite Rule: The input is labeled as 'True' if it mentions a date, the number of letters in each word is a prime number, and it contains three consecutive vowels.
+Input: I have a doctor's appointment on October 13th. Label: True
+Input: Meeting at 2 o'clock in the afternoon. Label: False
+Input: Tomorrow is Friday the 13th. Label: True
+Input: The quick brown fox jumps. Label: False
+Input: Our wedding anniversary is on May 29th. Label: True
+Input: I need to buy some groceries. Label: False
+Input: Saturday is a holiday. Label: False
+Rule: The input is labeled as 'True' if the number of letters in each word is a prime number, it mentions a color, and it contains the name of an animal.
+Input: The red cat is playful. Label: True
+Input: The bird flies high. Label: False
+Input: The brown dog barks loudly. Label: True
+Input: The flower blooms beautifully. Label: False
+Input: The black bear sleeps in the cave. Label: True
+Input: The tree provides shade. Label: False
+Input: The yellow canary sings sweetly. Label: True
+
+Composite Rule: 
+The input is labeled as 'True' if the number of letters in each word is a prime number AND the case alternates between words AND all words are in uppercase.
+Input: The cat leaps high. Label: False
+Input: A grand piano plays softly. Label: False
+Input: SHE LOVES TO DANCE. Label: True
+Input: The MOON shines bright. Label: True
+Input: We aRE fRIENDS forever. Label: False
+Input: THE SKY IS BLUE. Label: True
+Input: My dog is friendly. Label: False
+
+Composite Rule: The input is labeled as 'True' if the number of words is even AND it starts with a capital letter AND it contains comparative adjectives.
+Input: The cat is on the mat. Label: False
+Input: The quick brown fox. Label: False
+Input: This is taller than that. Label: True
+Input: A lone tree stands tall. Label: False
+Input: small case start. Label: False
+Input: Positive degree statement. Label: False
+Input: This car is faster. Label: True
+
+Composite Rule: The input is labeled as 'True' if it contains a repeated letter or any special characters, and the word lengths follow the Fibonacci sequence.
+Input: The smell of roses. Label: True
+Input: No repeated characters here. Label: False
+Input: Who let the dogs out? Label: True
+Input: This sentence doesn't have any special characters. Label: False
+Input: A dog chased a cat. Label: False
+Input: Look! A whale in the ocean! Label: True
+Input: This input contains repeated letters but doesn't follow the Fibonacci sequence. Label: False
+
+Composite Rule: The input is labeled as 'True' if the word lengths form an arithmetic progression, it contains proper nouns, and it contains a smiley face.
+Input: The cat sat on the mat. John visited Paris. I'm so happy! :) Label: True
+Input: Random word lengths. No proper nouns in this sentence. This news is sad. Label: False
+Input: Today is a beautiful day. The sun is shining. I love it! :) Label: True
+Input: This task is difficult. John and Mary went to the park. Label: False
+Input: The quick brown fox jumps over the lazy dog. Emma likes to travel. Label: False
+Input: Penguins are adorable creatures. I'm feeling great! :) Label: True
+Input: My favorite color is blue. John and Sarah are getting married. This joke is hilarious! :) Label: True
+
+Composite Rule: The input is labeled as 'True' if all words are in uppercase, it contains three consecutive consonants, and it contains the name of an animal.
+Input: THIS IS AN EXAMPLE. Label: True
+Input: Mixed case sentence. Label: False
+Input: Whispering winds. Label: True
+Input: Soft melodies. Label: False
+Input: The elephant is huge. Label: True
+Input: No animal names in this text. Label: False
+Input: SHOUTING LIONS ROAR. Label: True
+Input: A bird in the sky. Label: False
+Input: The snake is venomous. Label: True
+Input: Running through the forest. Label: False
+Input: ALLIGATORS ARE SCARY. Label: True
+Input: I love to swim. Label: False
+Input: The cheetah is fast. Label: True
+Input: Mountains are tall. Label: False
+
+Composite Rule: The input is labeled as 'True' if the word lengths follow the Fibonacci sequence, mentions weather conditions, and contains an exclamation mark.
+Input: Sun is shining! Label: True
+Input: Today is a beautiful day. Label: False
+Input: It's raining and windy outside! Label: True
+Input: The sky is clear. Label: False
+Input: Wow, it's snowing heavily! Label: True
+Input: I like the cool breeze. Label: False
+Input: What a fantastic sunny day! Label: True
+
+Composite Rule: The input is labeled as 'True' if it contains the '@' symbol, the number of words is odd, and it contains superlative adjectives.
+Input: Email me @example.com. Label: True
+Input: Hello world! Label: False
+Input: This is the tallest building. Label: True
+Input: Even word count without superlatives. Label: False
+Input: Reach me at contact@example.com. Label: True
+Input: A simple sentence without superlatives. Label: False
+Input: No symbols and even word count. Label: False
+
+Composite Rule: The input is labeled as 'True' if it mentions a color, all words are in uppercase, and the case alternates between words.
+Input: The sky is blue. Label: True
+Input: THIS IS AN EXAMPLE. Label: True
+Input: ThIs Is An ExAmPlE. Label: True
+Input: No color references in this text. Label: False
+Input: Mixed case sentence. Label: False
+Input: All lowercase. Label: False
+Input: The red apple. Label: True
+
+Composite Rule: The input is labeled as 'True' if it contains the word 'apple' or an exclamation mark and also contains proper nouns.
+Input: I love eating apples. Label: True
+Input: Bananas are my favorite. Label: False
+Input: What a wonderful day! Label: True
+Input: Regular sentence without exclamations. Label: False
+Input: John visited Paris. Label: True
+Input: No proper nouns in this sentence. Label: False
+Input: Apples are delicious! John bought some. Label: True
+
+Composite Rule: The input is labeled as 'True' if it contains two negation words, follows an A-B-A rhyme scheme, and contains the word 'apple'.
+Input: I don't want to not eat an apple. Label: True
+Input: This poem has a beautiful rhyme scheme. Label: False
+Input: I don't like apples or bananas. Label: True
+Input: Roses are red, violets are blue. Label: False
+Input: I can't believe I forgot to buy apples. Label: True
+Input: The cat sat on the mat, the sun is so bright. Label: False
+Input: I shouldn't have eaten that apple. Label: True
+
+Composite Rule: The input is labeled as 'True' if it contains the '@' symbol and the word 'apple' or a political term.
+Input: Email me @example.com about the latest election news. Label: True
+Input: I love eating apples. Label: True
+Input: Bananas are my favorite. Label: False
+Input: The election results are in. Label: True
+Input: No special symbols here. Label: False
+Input: I enjoy oranges. Label: False
+Input: @applestore offers discount on iPhones. Label: True
+
+Composite Rule: The input is labeled as 'True' if it contains three consecutive consonants, follows the Fibonacci sequence in word lengths, and contains comparative adjectives.
+Input: Dancing in the rain is delightful. Label: False
+Input: Strong winds blew the leaves away. Label: True
+Input: The big red apple. Label: True
+Input: This is larger than that. Label: True
+Input: Beautiful flowers bloom in spring. Label: False
+Input: The cat sat on the mat. Label: False
+Input: The pen is mightier than the sword. Label: True
+
+Composite Rule: 
+The input is labeled as 'True' if it contains a smiley face AND reads the same backward as forward AND all words are in uppercase.
+Input: I'm so happy! :)  Label: True
+Input: This news is sad.  Label: False
+Input: A man, a plan, a canal, Panama!  Label: False
+Input: Racecar  Label: True
+Input: Did Hannah see bees?  Label: True
+Input: WOW  Label: True
+Input: WHO?  Label: False
+
+Composite Rule: The input is labeled as 'True' if the case alternates between words, the word lengths alternate between odd and even, and it contains a political term.
+Input: ThIs Is An Election. Label: True
+Input: aNother caT on a Mat. Label: False
+Input: The Presidential debate was held yesterday. Label: True
+Input: This is a non-political statement. Label: False
+Input: The congress passed a new bill. Label: True
+Input: My dog is brown. Label: False
+Input: Political campaigns are underway. Label: True
+
+Composite Rule: The input is labeled as 'True' if it contains adverbs, mentions the name of a technology company, and contains three consecutive consonants.
+Input: He spoke softly about Apple Inc. Label: True
+Input: The winds whispered softly. Label: True
+Input: Apple Inc. introduced a new product. Label: True
+Input: The melodies were gentle. Label: False
+Input: Softly and quietly, the river flowed. Label: False
+Input: Microsoft Corporation announced its earnings. Label: True
+Input: The clouds moved slowly. Label: False
+
+Composite Rule: The input is labeled as 'True' if it mentions a date, contains two words that rhyme, and mentions weather conditions.
+Input: I have a doctor's appointment on July 19th and it's raining. Label: True
+Input: Let's go out for dinner tomorrow. Label: False
+Input: Today is a beautiful sunny day. Label: True
+Input: I like reading books and going for a walk. Label: False
+Input: Are you free on Friday? Label: True
+Input: The dog barked at the car. Label: False
+Input: Have you checked the weather forecast for this weekend? Label: True
+
+Composite Rule: The input is labeled as 'True' if it satisfies at least two out of the three rules mentioned above.
+Input: I love pizza! Label: True
+Input: The weather is nice today. Label: False
+Input: 12345 is my lucky number. Label: True
+Input: Coffee is my favorite drink. Label: False
+Input: Wow, this is amazing! Label: True
+Input: I have a pet dog. Label: False
+Input: Can you solve this equation? Label: True
+
+Composite Rule: The input is labeled as 'True' if it contains three words with the same starting letter, the word lengths follow the Fibonacci sequence, and it contains a political term.
+Input: Peter Piper picked a peck of pickled peppers. Label: True
+Input: The sun is shining. Label: False
+Input: Bernie believes better benefits are beneficial. Label: True
+Input: The cat wears a hat. Label: False
+Input: Politics can be polarizing. Label: True
+Input: The grass is green. Label: False
+Input: Democratic candidates campaign diligently. Label: True
+
+Composite Rule: The input is labeled as 'True' if it contains superlative adjectives, has an even number of words, and contains three consecutive vowels.
+Input: This is the tallest building. Label: True
+Input: The cat is on the mat. Label: False
+Input: No superlatives in this text. Label: False
+Input: The rain poured down. Label: True
+Input: A lone tree stands tall. Label: False
+Input: A cat on a mat. Label: False
+Input: This is the most beautiful place. Label: True
+
+Composite Rule: The input is labeled as 'True' if the number of letters in each word is a prime number, it contains three consecutive vowels, and it follows an A-B-A rhyme scheme.
+Input: The owl hoots at night. Label: False
+Input: The rain poured down. Label: False
+Input: The sun sets in the west, a sight so grand. Label: True
+Input: Basic sentence structure. Label: False
+Input: A cat on a mat. Label: False
+Input: No specific rhyme scheme observed. Label: False
+Input: The pie is so sweet. Label: True
+Input: I need a break. Label: True
+Input: Wonderful day to play. Label: False
+
+Composite Rule: The input is labeled as 'True' if it contains superlative adjectives, mentions a geographical location, and contains any numeric digits.
+Input: This is the tallest building in New York City and its height is 203 meters. Label: True
+Input: There are no superlatives, but the text mentions Paris. Label: True
+Input: The temperature in London is 20 degrees Celsius. Label: True
+Input: No significant adjectives or geographic references, but the input contains the number 1234. Label: True
+Input: This is an average-sized pizza. Label: False
+Input: No location or numbers, and no superlative adjectives present. Label: False
+Input: The car with 4 wheels will arrive tomorrow. Label: False
+
+Composite Rule: The input is labeled as 'True' if the sentence structure resembles a question, the word lengths follow the Fibonacci sequence, and it contains a smiley face.
+Input: What is the time? :) Label: True
+Input: I am feeling great today! Label: False
+Input: How are you doing? Label: True
+Input: The cat is sleeping. :( Label: False
+Input: What is your favorite color? :) Label: True
+Input: I need to go to the supermarket. Label: False
+Input: Are you coming to the party? :) Label: True
+
+Composite Rule: The input is labeled as 'True' if it contains an exclamation mark, three consecutive consonants, and mentions a color.
+Input: I can't believe it! It's red hot! Label: True
+Input: The birds are singing. Label: False
+Input: Wow, look at that stunning sunset! Label: True
+Input: The rainbow appeared after the rain. Label: True
+Input: I am extremely tired. Label: False
+Input: The painting is beautiful. Label: True
+Input: What a fantastic party! Label: True
+
+Composite Rule: The input is labeled as 'True' if it contains a reference to mythology, follows the Fibonacci sequence in word lengths, and contains three consecutive vowels.
+Input: Hercules defeated the Hydra, a mythological creature. Label: True
+Input: No mythological references found, just a simple sentence. Label: False
+Input: The bee flew gracefully by. Label: True
+Input: A simple, short sentence. Label: False
+Input: The rain poured down, resembling a mythological flood. Label: True
+Input: A cat sat on a mat, no references to mythology. Label: False
+Input: Apollo, the Greek god, rode his golden chariot across the sky. Label: True
+Input: The painting was red and blue, no mythological references. Label: False
+Input: The ancient myths are timeless tales. Label: True
+Input: The book is full of facts and figures. Label: False
+Input: The nymphs danced in the moonlight. Label: True
+Input: The car sped down the highway. Label: False
+Input: The phoenix rose from the ashes. Label: True
+Input: The movie was fast-paced and action-packed. Label: False
+
+Composite Rule: The input is labeled as 'True' if it contains the word 'apple' OR mentions a date OR contains two negation words.
+Input: I love eating apples on December 25th. Label: True
+Input: Bananas are my favorite, not apples. Label: True
+Input: I will meet you next week. Label: False
+Input: No fruits mentioned. Label: False
+Input: I don't want to go on December 25th. Label: True
+Input: Apples and oranges are delicious. Label: True
+Input: I will be free on Monday. Label: True
+
+Composite Rule: The input is labeled as 'True' if it contains verbs in the future tense, mentions a mathematical equation, and contains the '@' symbol.
+Input: Tomorrow, I will solve the equation E=mc^2. @example.com. Label: True
+Input: No mathematical equations in this sentence, but I will email you. Label: True
+Input: The @ symbol is not present in this sentence. Label: False
+Input: E=mc^2 is a famous equation. Label: False
+Input: I will eat dinner tomorrow. Label: False
+Input: Math is my favorite subject, and I will solve equations. Label: False
+Input: Email me at test@example.com. Label: True
+
+Composite Rule: The input is labeled as 'True' if all words are in uppercase, it mentions the name of a technology company, and the sentence structure resembles a question.
+Input: IS APPLE INC. A TECHNOLOGY COMPANY? Label: True
+Input: This is a regular sentence. Label: False
+Input: WHERE CAN I BUY PRODUCTS FROM GOOGLE? Label: True
+Input: AMAZON RELEASED A NEW PRODUCT. Label: False
+Input: DID MICROSOFT ACQUIRE ANOTHER COMPANY? Label: True
+Input: I LOVE USING TWITTER. Label: False
+Input: HOW DOES FACEBOOK MAKE MONEY? Label: True
+
+Composite Rule: The input is labeled as 'True' if it contains numbers in exponential notation, mentions weather conditions, and contains the word 'apple'.
+Input: The speed of light is 3e8 m/s. It's raining outside. I love eating apples. Label: True
+Input: No exponential numbers here. No mention of weather. Bananas are my favorite. Label: False
+Input: No exponential numbers here. It's snowing outside. I love eating apples. Label: True
+Input: The population of this city is 5.2e6. No mention of weather. Bananas are my favorite. Label: False
+Input: The temperature is 25°C. No mention of weather. I love eating apples. Label: True
+Input: The acceleration is given by 9.8m/s². It's sunny outside. Bananas are my favorite. Label: False
+Input: No exponential numbers here. It's cloudy outside. No mention of apples. Label: False
+
+Composite Rule: The input is labeled as 'True' if it contains three words with the same starting letter AND the number of words is greater than 5 AND it contains a smiley face.
+Input: Happy hippos have hats! :) Label: True
+Input: Cats cuddle and play. Label: False
+Input: Sleepy sloths slowly slide. :) Label: False
+Input: Bouncing balls burst balloons! :D Label: True
+Input: Tiny turtles tumble together. Label: False
+Input: Three thoughtful tigers. :) Label: False
+Input: Jolly jokers joke joyfully. :) Label: True
+
+Composite Rule: The input is labeled as 'True' if it contains three consecutive vowels, mentions a date, and contains three words with the same starting letter.
+Input: The rain poured down on December 25th. Label: True
+Input: A cat on a mat with no dates. Label: False
+Input: The beach is beautiful on July 4th. Label: True
+Input: Two birds sang a song. Label: False
+Input: The yellow tulips blossomed in May. Label: True
+Input: There are no holidays in sight. Label: False
+Input: Alice always appreciates apples. Label: True
+
+Composite Rule: The input is labeled as 'True' if it contains the '@' symbol and a reference to mythology or comparative adjectives.
+Input: Email me @example.com. Label: True
+Input: No special symbols here. Label: False
+Input: Hercules defeated the Hydra. Label: True
+Input: No mythological references found. Label: False
+Input: This is taller than that. Label: True
+Input: Positive degree statement. Label: False
+Input: @mythology.com exists. Label: True
+
+Composite Rule: The input is labeled as 'True' if it contains a smiley face, any numeric digits, and two negation words.
+Input: This is a great day! :) Label: True
+Input: No rain today. Label: False
+Input: I hate Mondays :( Label: False
+Input: The price is $99.99. Label: True
+Input: Don't miss this opportunity! Label: False
+Input: I have three dogs. Label: True
+Input: I can't believe it's not butter! Label: True
+
+Composite Rule: The input is labeled as 'True' if it contains the '@' symbol AND the number of words is even AND it starts with a capital letter.
+Input: Please contact me @example.com. Label: True
+Input: This is a sample email address: sample@example.com. Label: True
+Input: Send me an email at abc@example.com. Label: True
+Input: I received an email yesterday. Label: False
+Input: Check out this website: example.com. Label: False
+Input: This sentence has odd number of words. Label: False
+Input: Hello, how are you? Label: False
+
+Composite Rule: The input is labeled as 'True' if it contains a political term, any special character, and a repeated letter.
+Input: The election results are in! Label: True
+Input: Success is sweet, and it costs $20. Label: True
+Input: Non-political statement without any special characters. Label: False
+Input: This sentence has a political term but no special characters. Label: False
+Input: The candidates have started campaigning. Label: True
+Input: $100 is the cost of success. Label: True
+Input: No repeated letters and no political terms in this input. Label: False
+
+Composite Rule: The input is labeled as 'True' if the sentence structure resembles a question, it contains the '@' symbol, and the word lengths form an arithmetic progression.
+Input: What is your email address? Label: True
+Input: Have you seen my keys? Label: True
+Input: Email me at example@example.com. Label: True
+Input: This is a statement. Label: False
+Input: Can you pass the salt? Label: False
+Input: I love cats! Label: False
+Input: Send me an email at hello@example.com. Label: True
+
+Composite Rule: The input is labeled as 'True' if it starts with a capital letter, contains three words with the same starting letter, and contains an acronym.
+Examples and Labels for 
+Composite Rule:
+Input: Jack jumps joyfully. Label: False
+Input: The big bear. Label: True
+Input: Apple and avocado arrival. Label: False
+Input: Happy Halloween, everyone! Label: True
+Input: XYZ Company is growing. Label: True
+Input: Harry had horrible hair. Label: False
+Input: QED stands for Quod Erat Demonstrandum. Label: True
+
+Composite Rule: The input is labeled as 'True' if it contains an exclamation mark AND contradictory statements AND the number of words is even.
+Input: What a wonderful day! The sun never sets in the east. The cat is on the mat. Label: True
+Input: I am feeling great today! The weather is perfect. Label: False
+Input: The sun rises in the east. A lone tree stands tall. Label: False
+Input: Wow, this is amazing! The sky is green today. The cat is on the mat. Label: True
+Input: I had a terrible day. The sun never sets in the east. The cat is on the mat. Label: True
+Input: The party was fantastic! Everyone had a great time. Label: False
+Input: The sky is blue. The grass is green. Label: False
+
+Composite Rule: The input is labeled as 'True' if it contains three consecutive consonants AND three consecutive vowels AND a political term.
+Input: The whispering winds blew fiercely during the election campaign. Label: True
+Input: The soft melodies brought joy to the non-political gathering. Label: False
+Input: The rain poured down on the heated political debate. Label: True
+Input: A cat on a mat waited for the election results. Label: False
+Input: The country witnessed a whirlwind of political events. Label: True
+Input: The bird sang a sweet melody, oblivious to the political scenario. Label: False
+Input: The candidate's speech was filled with consonants and vowels. Label: False
+
+Composite Rule: The input is labeled as 'True' if the number of words is odd, it contains three consecutive vowels, and it mentions a date.
+Input: The quick brown fox jumped over the lazy dog.  Label: False
+Input: Today is a beautiful day. Label: False
+Input: She sells seashells by the seashore. Label: False
+Input: I have a dentist appointment on July 10th. Label: False
+Input: The birds chirped in the morning. Label: False
+Input: The rain poured down on September 1st.  Label: True
+Input:  I can't believe it's already November. Label: False
+
+Composite Rule: The input is labeled as 'True' if the word lengths alternate between odd and even, and it contains verbs in the future tense, and the case alternates between words.
+Input: By tomorrow, I will go for a walk. Label: True
+Input: This is a pen. Label: False
+Input: She will dance at the party. Label: False
+Input: The quick brown fox jumps over a lazy dog. Label: False
+Input: Next week, they will visit their grandparents. Label: True
+Input: He is playing tennis tomorrow. Label: False
+Input: It Is a SaMpLe TeSt. Label: True
+
+Composite Rule: The input is labeled as 'True' if all words are in uppercase AND the word lengths form an arithmetic progression AND it contains superlative adjectives.
+Input: THIS IS AN EXAMPLE. Label: True
+Input: Mixed case sentence. Label: False
+Input: The cat sat on the mat. Label: False
+Input: Random word lengths. Label: False
+Input: This is the tallest building. Label: False
+Input: No superlatives in this text. Label: False
+Input: THIS WAS A SHORT EXAMPLE. Label: True

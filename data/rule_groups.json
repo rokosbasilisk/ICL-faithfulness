@@ -1,0 +1,84 @@
+{
+    "groups": [
+        {
+            "name": "Word Pattern and Structure",
+            "rules": [
+                "Presence of Specific Word",
+                "All Caps",
+                "Consecutive Vowels",
+                "Repeated Letter"
+            ]
+        },
+        {
+            "name": "Sentence Structure",
+            "rules": [
+                "Sentence Length",
+                "Start with Capital Letter",
+                "Alternating Case",
+                "Palindrome",
+                "Consecutive Consonants",
+                "Sentence Structure Similar to a Question",
+                "Contains Numbers"
+            ]
+        },
+        {
+            "name": "Symbol and Character Presence",
+            "rules": [
+                "Presence of Punctuation (?)",
+                "Presence of Specific Symbol",
+                "Presence of Special Characters",
+                "Presence of Emoticons"
+            ]
+        },
+        {
+            "name": "Word Count",
+            "rules": [
+                "Even Word Count",
+                "Odd Word Count",
+                "Prime Word Length",
+                "Fibonacci Word Length",
+                "Word Length Odd-Even Alternation",
+                "Arithmetic Progression Word Length"
+            ]
+        },
+        {
+            "name": "Grammatical",
+            "rules": [
+                "Negation Keywords",
+                "Double Negation",
+                "Rhyming Words",
+                "Presence of Alliteration",
+                "Contains Contractions",
+                "Presence of Adverbs",
+                "Presence of Gender Pronouns",
+                "Presence of Proper Nouns",
+                "Presence of Comparative Adjectives",
+                "Presence of Superlative Adjectives",
+                "Presence of Future Tense Verbs"
+            ]
+        },
+        {
+            "name": "Language Context",
+            "rules": [
+                "Mention of Date or Time",
+                "Presence of Exponential Numbers",
+                "Presence of Color References",
+                "Presence of Contradictory Statements",
+                "Presence of Poetry Structure"
+            ]
+        },
+        {
+            "name": "Knowledge Domain",
+            "rules": [
+                "Presence of Geographical Locations",
+                "Presence of Mythological References",
+                "Presence of Animal Names",
+                "Presence of Political Terms",
+                "Presence of Weather Terms",
+                "Mathematical Equation Mention",
+                "Presence of Technology Company Names",
+                "Presence of Acronyms"
+            ]
+        }
+    ]
+}

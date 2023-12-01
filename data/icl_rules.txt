@@ -1,0 +1,180 @@
+Rule: Presence of Specific Word
+Example: "The input is labeled as 'True' if it contains the word 'apple'."
+Input: "I love eating apples." Label: True
+Input: "Bananas are my favorite." Label: False
+Rule: Sentence Length
+Example: "The input is labeled as 'True' if the number of words is greater than 5."
+Input: "A quick brown fox jumps over the lazy dog." Label: True
+Input: "She sat by the river." Label: False
+Rule: All Caps
+Example: "The input is labeled as 'True' if all words are in uppercase."
+Input: "THIS IS AN EXAMPLE." Label: True
+Input: "Mixed case sentence." Label: False
+Rule: Contains Numbers
+Example: "The input is labeled as 'True' if it contains any numeric digits."
+Input: "The room number is 203." Label: True
+Input: "No numbers in this text." Label: False
+Rule: Consecutive Vowels
+Example: "The input is labeled as 'True' if it contains three consecutive vowels."
+Input: "The rain poured down." Label: True
+Input: "A cat on a mat." Label: False
+Rule: Presence of Punctuation (?)
+Example: "The input is labeled as 'True' if it contains an exclamation mark."
+Input: "What a wonderful day!" Label: True
+Input: "Regular sentence without exclamations." Label: False
+Rule: Negation Keywords
+Example: "The input is labeled as 'True' if it contains the word 'not'."
+Input: "I do not like Mondays." Label: True
+Input: "Positive vibes only." Label: False
+Rule: Start with Capital Letter
+Example: "The input is labeled as 'True' if it starts with a capital letter."
+Input: "The quick brown fox." Label: True
+Input: "small case start." Label: False
+Rule: Presence of Specific Symbol
+Example: "The input is labeled as 'True' if it contains the '@' symbol."
+Input: "Email me @example.com." Label: True
+Input: "No special symbols here." Label: False
+ Rule: Even Word Count
+Example: "The input is labeled as 'True' if the number of words is even."
+Input: "The cat is on the mat." Label: True
+Input: "A lone tree stands tall." Label: False
+ Rule: Presence of Emoticons
+Example: "The input is labeled as 'True' if it contains a smiley face."
+Input: "I'm so happy! :)" Label: True
+Input: "This news is sad." Label: False
+ Rule: Alternating Case
+Example: "The input is labeled as 'True' if the case alternates between words."
+Input: "ThIs Is An ExAmPlE." Label: True
+Input: "All lowercase." Label: False
+ Rule: Palindrome
+Example: "The input is labeled as 'True' if it reads the same backward as forward."
+Input: "A man, a plan, a canal, Panama!" Label: True
+Input: "Random sentence." Label: False
+ Rule: Presence of Special Characters
+Example: "The input is labeled as 'True' if it contains any special characters."
+Input: "This costs $20." Label: True
+Input: "Regular sentence without symbols." Label: False
+ Rule: Contains Contractions
+Example: "The input is labeled as 'True' if it contains contractions."
+Input: "I can't believe it." Label: True
+Input: "Full form sentences." Label: False
+ Rule: Presence of Alliteration
+Example: "The input is labeled as 'True' if it contains three words with the same starting letter."
+Input: "Peter Piper picked." Label: True
+Input: "No repeated starting letters." Label: False
+ Rule: Double Negation
+Example: "The input is labeled as 'True' if it contains two negation words."
+Input: "I don't want to not go." Label: True
+Input: "Positive statement." Label: False
+ Rule: Rhyming Words
+Example: "The input is labeled as 'True' if it contains two words that rhyme."
+Input: "The cat wore a hat." Label: True
+Input: "No rhyming words." Label: False
+ Rule: Presence of Acronyms
+Example: "The input is labeled as 'True' if it contains an acronym."
+Input: "NASA sent a rocket." Label: True
+Input: "No acronyms here." Label: False
+ Rule: Odd Word Count
+Example: "The input is labeled as 'True' if the number of words is odd."
+Input: "An odd number of words." Label: True
+Input: "Even word count." Label: False
+ Rule: Presence of Comparative Adjectives
+Example: "The input is labeled as 'True' if it contains comparative adjectives."
+Input: "This is taller than that." Label: True
+Input: "Positive degree statement." Label: False
+ Rule: Presence of Superlative Adjectives
+Example: "The input is labeled as 'True' if it contains superlative adjectives."
+Input: "This is the tallest building." Label: True
+Input: "No superlatives in this text." Label: False
+ Rule: Mention of Date or Time
+Example: "The input is labeled as 'True' if it mentions a date."
+Input: "I will meet you on December 25th." Label: True
+Input: "No dates mentioned." Label: False
+ Rule: Presence of Proper Nouns
+Example: "The input is labeled as 'True' if it contains proper nouns."
+Input: "John visited Paris." Label: True
+Input: "No proper nouns in this sentence." Label: False
+ Rule: Presence of Exponential Numbers
+Example: "The input is labeled as 'True' if it contains numbers in exponential notation."
+Input: "The speed of light is 3e8 m/s." Label: True
+Input: "No exponential numbers here." Label: False
+ Rule: Presence of Adverbs
+Example: "The input is labeled as 'True' if it contains adverbs."
+Input: "He spoke softly." Label: True
+Input: "No adverbs in this text." Label: False
+ Rule: Presence of Gender Pronouns
+Example: "The input is labeled as 'True' if it contains gender-specific pronouns."
+Input: "He went to the store." Label: True
+Input: "Gender-neutral statement." Label: False
+ Rule: Presence of Animal Names
+Example: "The input is labeled as 'True' if it contains the name of an animal."
+Input: "The elephant is huge." Label: True
+Input: "No animal names in this text." Label: False
+ Rule: Presence of Political Terms
+Example: "The input is labeled as 'True' if it contains a political term."
+Input: "The election results are in." Label: True
+Input: "Non-political statement." Label: False
+ Rule: Presence of Weather Terms
+Example: "The input is labeled as 'True' if it mentions weather conditions."
+Input: "It's raining outside." Label: True
+Input: "No mention of weather." Label: False
+ Rule: Word Length Odd-Even Alternation
+Example: "The input is labeled as 'True' if the word lengths alternate between odd and even."
+Input: "A cat on a mat." Label: True
+Input: "Three mice ran away." Label: False
+ Rule: Presence of Poetry Structure
+Example: "The input is labeled as 'True' if it follows an A-B-A rhyme scheme."
+Input: "The sun sets in the west, a sight so grand." Label: True
+Input: "No specific rhyme scheme observed." Label: False
+ Rule: Consecutive Consonants
+Example: "The input is labeled as 'True' if it contains three consecutive consonants."
+Input: "Whispering winds." Label: True
+Input: "Soft melodies." Label: False
+ Rule: Prime Word Length
+Example: "The input is labeled as 'True' if the number of letters in each word is a prime number."
+Input: "The owl hoots at night." Label: True
+Input: "Basic sentence structure." Label: False
+ Rule: Presence of Geographical Locations
+Example: "The input is labeled as 'True' if it mentions a geographical location."
+Input: "Mount Everest is the highest peak." Label: True
+Input: "No geographical references." Label: False
+ Rule: Fibonacci Word Length
+Example: "The input is labeled as 'True' if the word lengths follow the Fibonacci sequence."
+Input: "A bee flew by." Label: True
+Input: "Simple sentence structure." Label: False
+ Rule: Presence of Mythological References
+Example: "The input is labeled as 'True' if it contains a reference to mythology."
+Input: "Hercules defeated the Hydra." Label: True
+Input: "No mythological references found." Label: False
+ Rule: Repeated Letter
+Example: "The input is labeled as 'True' if it contains a repeated letter."
+Input: "Success is sweet." Label: True
+Input: "No repeated letters in this sentence." Label: False
+ Rule: Arithmetic Progression Word Length
+Example: "The input is labeled as 'True' if the word lengths form an arithmetic progression."
+Input: "The cat sat on the mat." Label: True
+Input: "Random word lengths." Label: False
+ Rule: Presence of Future Tense Verbs
+Example: "The input is labeled as 'True' if it contains verbs in the future tense."
+Input: "Tomorrow, I will travel." Label: True
+Input: "Past tense statement." Label: False
+ Rule: Sentence Structure Similar to a Question
+Example: "The input is labeled as 'True' if the sentence structure resembles a question."
+Input: "What a beautiful day!" Label: True
+Input: "Regular declarative sentence." Label: False
+ Rule: Presence of Color References
+Example: "The input is labeled as 'True' if it mentions a color."
+Input: "The sky is blue." Label: True
+Input: "No color references in this text." Label: False
+ Rule: Mathematical Equation Mention
+Example: "The input is labeled as 'True' if it mentions a mathematical equation."
+Input: "E=mc^2." Label: True
+Input: "No mathematical equations in this sentence." Label: False
+ Rule: Presence of Contradictory Statements
+Example: "The input is labeled as 'True' if it contains contradictory statements."
+Input: "The sun never sets in the east." Label: True
+Input: "Consistent statement." Label: False
+ Rule: Presence of Technology Company Names
+Example: "The input is labeled as 'True' if it mentions the name of a technology company."
+Input: "Apple Inc. released a new product." Label: True
+Input: "No technology company names mentioned." Label: False
